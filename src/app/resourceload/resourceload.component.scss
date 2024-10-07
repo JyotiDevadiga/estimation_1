@@ -1,0 +1,28 @@
+.all {
+  .table-container {
+    overflow-x: auto; /* Enable horizontal scrolling for the table */
+  }
+
+  table {
+    width: 100%; /* Ensure the table takes full width of its container */
+    min-width: 1200px; /* Minimum width to prevent collapsing columns */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  th,
+  td {
+    text-align: center; /* Center align table header and cells */
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  /* Specific styling for the 'Total' column */
+  th:nth-child(7), td:nth-child(7) {
+    min-width: 150px; /* Set minimum width for the 'Total' column */
+  }
+
+  /* Specific styling for the 'M01' to 'M12' columns */
+  th:nth-child(n+8):nth-child(-n+19),
+  td:nth-child(n+8):nth-child(-n+19) {
+    min-width: 100px; /* Set minimum width for the 'M01' to 'M12' columns */
+  }
+}
